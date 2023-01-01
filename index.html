@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1>Car Insurance Form</h1>
+        <form action="" method="post">
+            <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+        </div>
+        <div>
+            <p>Gender</p>
+            <input id="male" type="radio" name="gender">
+            <label for="gmale">Male</label>
+            <input id="female" type="radio" name="gender">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="cars">Car Brands</label>
+            <select name="cars" id="cars">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+        </div>
+        <div>
+            <label for="carage">Car Age</label>
+            <input id="carage" type="number" min="0" name=age>
+        </div>
+        <div>
+            <label for="dop">Date of Purchase</label>
+            <input id="dop" type="date" name="Date of Purchase">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <input id="btn" type="submit">
+        </div>
+        </form>
+    </section>
+</body>
+</html>
