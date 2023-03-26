@@ -1,58 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
 </head>
+
 <body>
-    <section class="container">
-        <h1>Car Insurance Form</h1>
-        <form action="" method="post">
-            <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email">
-        </div>
-        <div>
-            <p>Gender</p>
-            <input id="male" type="radio" name="gender">
-            <label for="gmale">Male</label>
-            <input id="female" type="radio" name="gender">
-            <label for="female">Female</label>
-        </div>
-        <div>
-            <label for="cars">Car Brands</label>
-            <select name="cars" id="cars">
-                <option value="BMW">BMW</option>
-                <option value="Audi">Audi</option>
-                <option value="Mercedez">Mercedez</option>
-            </select>
-        </div>
-        <div>
-            <label for="carage">Car Age</label>
-            <input id="carage" type="number" min="0" name=age>
-        </div>
-        <div>
-            <label for="dop">Date of Purchase</label>
-            <input id="dop" type="date" name="Date of Purchase">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password">
-        </div>
-        <div>
-            <input id="btn" type="submit">
-        </div>
-        </form>
+    <div class="app-container">
+        <header>
+            <nav>
+                <section class="nav-lb">
+                    <div>
+                        <img class="app-icon" src="./assets/SH.@svg.svg" alt="SH-icon">
+                    </div>
+                    <div class="nav-search-block">
+                        <p><img src="./assets/search.svg" /></p>
+                        <p><input class="search-ip" type="text" placeholder="Search dress, coat, jeans etc" /></p>
+                    </div>
+                </section>
+                <section class="nav-rb">
+                    <div>
+                        <span><a href="#">Home</a></span>
+                        <span><a href="#">Explore</a></span>
+                    </div>
+                    <img class="user-pic" src="./assets/photo-1570295999919-56ceb5ecca61.jfif">
+                </section>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-unit">
+                <div class="herounit-lb">
+                    <h1>Best Place to Buy <span style="color: #2563eb">Everything</span></h1>
+                    <p>Here, you can shop for all your favourite beauty
+                        brands, clothes, household products and more at a single place
+                    </p>
+                    <div>
+                        <button id="shop-now-btn">Shop Now</button>
+                    </div>
+                    <div class="herounit-social-block">
+                        <span><img src="./assets/fb@svg.svg" /></span>
+                        <span><img src="./assets/tw@svg.svg" /></span>
+                        <span><img src="./assets/in@svg.svg" /></span>
+                    </div>
+                </div>
+                <div class="herounit-rb">
+                    <img id="herounit-banner" src="./assets/bannerimage.png" />
+                </div>
+            </section>
+            <section class="testmonial-unit">
+                <div>
+                    <p>Testimonials</p>
+                    <p>Why Shopper</p>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper" id='slider'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <section class="card">
+                                <div class="card-r1">
+                                    <section>
+                                        <div>
+                                            <img class="testmonials-img"
+                                                src="./assets/photo-1535713875002-d1d0cf377fde.avif" />
+                                        </div>
+                                        <div>
+                                            <p>Leo</p>
+                                            <p>Lead Designer</p>
+                                        </div>
+                                    </section>
+                                    <div>
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-outlined.svg" />
+                                    </div>
+                                </div>
+                                <div class="card-r2">
+                                    <p>
+                                        It was a very good experience
+                                    </p>
+                                </div>
+                                <div class="card-r3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium, iste quia
+                                    minima possimus odio quis at accusamus, nemo voluptatem minus laboriosam accusamus
+                                    modi,
+                                    natus eum aspernatur neque. Tempora, enim nam.
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="card">
+                                <div class="card-r1">
+                                    <section>
+                                        <div>
+                                            <img class="testmonials-img"
+                                                src="./assets/photo-1535713875002-d1d0cf377fde.avif" />
+                                        </div>
+                                        <div>
+                                            <p>Leo</p>
+                                            <p>Lead Designer</p>
+                                        </div>
+                                    </section>
+                                    <div>
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-outlined.svg" />
+                                    </div>
+                                </div>
+                                <div class="card-r2">
+                                    <p>
+                                        It was a very good experience
+                                    </p>
+                                </div>
+                                <div class="card-r3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium, iste quia
+                                    minima possimus odio quis at accusamus, nemo voluptatem minus laboriosam accusamus
+                                    modi,
+                                    natus eum aspernatur neque. Tempora, enim nam.
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="card">
+                                <div class="card-r1">
+                                    <section>
+                                        <div>
+                                            <img class="testmonials-img"
+                                                src="./assets/photo-1535713875002-d1d0cf377fde.avif" />
+                                        </div>
+                                        <div>
+                                            <p>Leo</p>
+                                            <p>Lead Designer</p>
+                                        </div>
+                                    </section>
+                                    <div>
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-outlined.svg" />
+                                    </div>
+                                </div>
+                                <div class="card-r2">
+                                    <p>
+                                        It was a very good experience
+                                    </p>
+                                </div>
+                                <div class="card-r3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium, iste quia
+                                    minima possimus odio quis at accusamus, nemo voluptatem minus laboriosam accusamus
+                                    modi,
+                                    natus eum aspernatur neque. Tempora, enim nam.
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="card">
+                                <div class="card-r1">
+                                    <section>
+                                        <div>
+                                            <img class="testmonials-img"
+                                                src="./assets/photo-1535713875002-d1d0cf377fde.avif" />
+                                        </div>
+                                        <div>
+                                            <p>Leo</p>
+                                            <p>Lead Designer</p>
+                                        </div>
+                                    </section>
+                                    <div>
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-outlined.svg" />
+                                    </div>
+                                </div>
+                                <div class="card-r2">
+                                    <p>
+                                        It was a very good experience
+                                    </p>
+                                </div>
+                                <div class="card-r3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium, iste quia
+                                    minima possimus odio quis at accusamus, nemo voluptatem minus laboriosam accusamus
+                                    modi,
+                                    natus eum aspernatur neque. Tempora, enim nam.
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="card">
+                                <div class="card-r1">
+                                    <section>
+                                        <div>
+                                            <img class="testmonials-img"
+                                                src="./assets/photo-1535713875002-d1d0cf377fde.avif" />
+                                        </div>
+                                        <div>
+                                            <p>Leo</p>
+                                            <p>Lead Designer</p>
+                                        </div>
+                                    </section>
+                                    <div>
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-outlined.svg" />
+                                    </div>
+                                </div>
+                                <div class="card-r2">
+                                    <p>
+                                        It was a very good experience
+                                    </p>
+                                </div>
+                                <div class="card-r3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium, iste quia
+                                    minima possimus odio quis at accusamus, nemo voluptatem minus laboriosam accusamus
+                                    modi,
+                                    natus eum aspernatur neque. Tempora, enim nam.
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="card">
+                                <div class="card-r1">
+                                    <section>
+                                        <div>
+                                            <img class="testmonials-img"
+                                                src="./assets/photo-1535713875002-d1d0cf377fde.avif" />
+                                        </div>
+                                        <div>
+                                            <p>Leo</p>
+                                            <p>Lead Designer</p>
+                                        </div>
+                                    </section>
+                                    <div>
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-filled.svg" />
+                                        <img class="rating-stars" src="./assets/star-outlined.svg" />
+                                    </div>
+                                </div>
+                                <div class="card-r2">
+                                    <p>
+                                        It was a very good experience
+                                    </p>
+                                </div>
+                                <div class="card-r3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium, iste quia
+                                    minima possimus odio quis at accusamus, nemo voluptatem minus laboriosam accusamus
+                                    modi,
+                                    natus eum aspernatur neque. Tempora, enim nam.
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <section class="nxt-prex-pgntion">
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+                        <div class="swiper-prev-btn">&#10094;</div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-nxt-btn">&#10095;</div>
+                    </section>
+                </div>
+    </div>
     </section>
+    </main>
+    </div>
 </body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: 'coverflow',
+        grabCursor: true,
+        spaceBetween: 75,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: true,
+        // },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true
+        },
+        navigation: {
+            nextEl: ".swiper-nxt-btn",
+            prevEl: ".swiper-prev-btn",
+            // nextEl: ".swiper-button-next",
+            // prevEl: ".swiper-button-prev",
+        },
+        // slidesPerView: 3,
+    });
+</script>
+</script>
+
 </html>
